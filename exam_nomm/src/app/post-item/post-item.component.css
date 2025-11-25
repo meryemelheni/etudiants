@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.post-item h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.post-item p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+

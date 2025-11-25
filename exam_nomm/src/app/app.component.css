@@ -1,0 +1,21 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-link.active {
+  font-weight: 600;
+}
+
+.app-shell {
+  min-height: calc(100vh - 66px);
+  display: flex;
+  align-items: flex-start;
+}

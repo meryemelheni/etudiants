@@ -1,0 +1,47 @@
+<section class="login-shell">
+  <div class="gradient-orb orb-top"></div>
+  <div class="gradient-orb orb-bottom"></div>
+
+  <form class="login-card" (ngSubmit)="onSubmit()">
+    <div class="card-header">
+      <span class="pill">Login Page</span>
+      <h1>Bienvenue</h1>
+      <p>Connectez-vous pour accéder à votre espace.</p>
+    </div>
+
+    <label class="input-label" for="email">Email</label>
+    <div class="input-wrapper">
+      <input
+        id="email"
+        type="email"
+        placeholder="exemple@email.com"
+        [(ngModel)]="email"
+        name="email"
+        required
+      />
+    </div>
+
+    <label class="input-label" for="password">Mot de passe</label>
+    <div class="input-wrapper">
+      <input
+        id="password"
+        type="password"
+        placeholder="••••••••"
+        [(ngModel)]="password"
+        name="password"
+        required
+      />
+    </div>
+
+    <button class="submit-btn" type="submit" [disabled]="pending">
+      {{ pending ? 'Connexion...' : 'Se connecter' }}
+    </button>
+
+    <div class="card-footer">
+      <a href="#">Mot de passe oublié ?</a>
+      <span>•</span>
+      <a href="#">Créer un compte</a>
+    </div>
+  </form>
+</section>
+
